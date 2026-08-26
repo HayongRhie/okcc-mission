@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>우간다 · 노효선·김소현 선교사 — OKCC 선교지 카드</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Song+Myung&family=IBM+Plex+Sans+KR:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#16181A; --ink2:#4A5157; --ink3:#7C858B;
+  --paper:#FCFCFA; --panel:#F2F3F0; --rule:#DCDFDB;
+  --accent:#A33B22; --wash:#F8EBE6;
+  --gutter:40px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{background:#E7E8E4;color:var(--ink);font-family:"IBM Plex Sans KR",system-ui,sans-serif;
+  font-weight:400;line-height:1.65;padding:28px 16px}
+.sheet{max-width:880px;margin:0 auto;background:var(--paper);
+  box-shadow:0 1px 3px rgba(0,0,0,.08),0 12px 40px rgba(0,0,0,.06)}
+.band{background:var(--accent);color:#fff;padding:26px var(--gutter) 22px}
+.eyebrow{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.16em;
+  text-transform:uppercase;opacity:.78;display:flex;gap:14px;flex-wrap:wrap}
+h1{font-family:"Song Myung",serif;font-weight:400;font-size:clamp(34px,6vw,52px);
+  line-height:1.08;margin:10px 0 6px;letter-spacing:-.01em}
+.who{font-size:15px;font-weight:300;opacity:.94}
+.who strong{font-weight:600}
+.meta{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));
+  border-bottom:1px solid var(--rule);padding:0 var(--gutter)}
+.meta div{padding:16px 18px;border-right:1px solid var(--rule);min-width:0}
+.meta div:first-child{padding-left:0}
+.meta div:last-child{padding-right:0}
+.meta div:last-child{border-right:0}
+.meta dt{font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.13em;
+  color:var(--ink3);text-transform:uppercase;margin-bottom:5px}
+.meta dd{font-size:15px;font-weight:600;line-height:1.35}
+.meta dd span{display:block;font-size:11.5px;font-weight:400;color:var(--ink2);margin-top:2px}
+.body{padding:0 var(--gutter) 40px}
+.quote{padding:34px 0 30px;border-bottom:1px solid var(--rule);
+  display:grid;grid-template-columns:3px 1fr;gap:22px}
+.quote .bar{background:var(--accent)}
+.quote p{font-family:"Song Myung",serif;font-size:clamp(19px,2.7vw,26px);line-height:1.5}
+.quote cite{display:block;margin-top:14px;font-style:normal;font-size:12px;color:var(--ink3);
+  font-family:"IBM Plex Mono",monospace;letter-spacing:.04em}
+section{padding:30px 0;border-bottom:1px solid var(--rule)}
+section:last-of-type{border-bottom:0}
+h2{font-size:12px;font-family:"IBM Plex Mono",monospace;letter-spacing:.15em;text-transform:uppercase;
+  color:var(--accent);font-weight:600;margin-bottom:16px;display:flex;align-items:center;gap:9px}
+h2::before{content:"◀";font-size:9px;transform:translateY(-1px)}
+p.lead{font-size:14.5px;color:var(--ink2);margin-bottom:18px;max-width:64ch}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--rule);border:1px solid var(--rule)}
+.grid2 article{background:var(--paper);padding:16px 18px}
+.grid2 .k{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.12em;color:var(--accent);margin-bottom:6px}
+.grid2 p{font-size:13.5px;color:var(--ink2);line-height:1.6}
+.work{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule)}
+.work div{background:var(--paper);padding:14px 18px;display:grid;grid-template-columns:150px minmax(0,1fr);gap:16px;align-items:start}
+.work dt{font-size:13.5px;font-weight:600;color:var(--accent)}
+.work dd{font-size:13.5px;color:var(--ink2)}
+
+/* 막힘 지표 — 우간다 시그니처: 사역을 멈춰 세운 세 가지 */
+.blocks{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--rule);border:1px solid var(--rule)}
+.blocks article{background:var(--paper);padding:18px}
+.blocks .st{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.12em;
+  color:#fff;background:var(--accent);display:inline-block;padding:2px 7px;margin-bottom:10px}
+.blocks h3{font-size:14.5px;font-weight:600;margin-bottom:6px}
+.blocks p{font-size:13px;color:var(--ink2);line-height:1.6}
+
+.pray{background:var(--wash);margin:0 calc(-1 * var(--gutter));padding:32px var(--gutter)}
+.pray h2{color:var(--accent)}
+.pray > ol{list-style:none;counter-reset:p;display:grid;gap:12px}
+.pray > ol > li{
+  counter-increment:p;position:relative;padding-left:44px;
+  font-size:14px;line-height:1.6;min-height:27px
+}
+.pray > ol > li::before{
+  content:counter(p,decimal-leading-zero);font-family:"IBM Plex Mono",monospace;
+  font-size:12px;font-weight:600;color:#fff;background:var(--accent);
+  width:26px;height:26px;display:grid;place-items:center;
+  position:absolute;left:0;top:1px
+}
+.pray > ol > li strong{font-weight:600;color:var(--ink)}
+.urgent{margin-top:22px;border-top:1px dashed #D2A392;padding-top:18px}
+.urgent .tag{display:inline-block;background:var(--accent);color:#fff;font-family:"IBM Plex Mono",monospace;
+  font-size:10px;letter-spacing:.12em;padding:3px 8px;margin-bottom:10px}
+.urgent ul{list-style:none;display:grid;gap:8px}
+.urgent ul > li{
+  display:block;counter-increment:none;min-height:0;
+  font-size:13.5px;line-height:1.6;padding-left:16px;position:relative;color:var(--ink2)
+}
+.urgent ul > li::before{
+  content:"—";position:absolute;left:0;top:0;
+  width:auto;height:auto;display:block;place-items:unset;
+  background:none;color:var(--accent);font-family:inherit;font-size:inherit;font-weight:400
+}
+.callout{border:2px solid var(--accent);padding:18px 20px;margin-top:4px}
+.callout .k{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.12em;color:var(--accent);margin-bottom:8px}
+.callout p{font-family:"Song Myung",serif;font-size:17px;line-height:1.55}
+.callout .note{font-family:"IBM Plex Sans KR",sans-serif;font-size:13px;color:var(--ink2);margin-top:10px}
+footer{padding:20px var(--gutter);background:var(--panel);font-family:"IBM Plex Mono",monospace;
+  font-size:10.5px;letter-spacing:.05em;color:var(--ink3);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+@media(max-width:680px){
+  :root{--gutter:22px}
+  body{padding:0}
+  .meta{grid-template-columns:1fr 1fr}
+  .meta div:first-child{padding-left:0}
+  .meta div:last-child{padding-right:0}
+  .meta div:nth-child(2n){border-right:0;padding-right:0}
+  .meta div:nth-child(2n+1){padding-left:0}
+  .meta div:nth-child(-n+2){border-bottom:1px solid var(--rule)}
+  .grid2,.blocks{grid-template-columns:1fr}
+  .work div{grid-template-columns:1fr;gap:3px}
+}
+@media print{body{background:#fff;padding:0}.sheet{box-shadow:none;max-width:none}section,.pray{break-inside:avoid}}
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <div class="band">
+    <div class="eyebrow"><span>OKCC 선교지 카드 04</span><span>동아프리카</span><span>교육 · ICT</span></div>
+    <h1>우간다</h1>
+    <p class="who"><strong>노효선 · 김소현 선교사</strong> · 카물리 지역 농촌 교육지원, 개혁신학대학교, 직업훈련교육센터 · 자녀 주안·예주</p>
+  </div>
+
+  <dl class="meta">
+    <div><dt>Ottawa → Kampala</dt><dd>약 11,600 km<span>경유 1~2회</span></dd></div>
+    <div><dt>인구</dt><dd>약 4,900만<span>중위연령 약 16세</span></dd></div>
+    <div><dt>종교</dt><dd>기독교 82%<span>가톨릭 39 · 성공회 32 · 오순절 11</span></dd></div>
+    <div><dt>사역 형태</dt><dd>학교 ICT 교육<span>신학대 인프라 · 직업훈련</span></dd></div>
+  </dl>
+
+  <div class="body">
+
+    <div class="quote">
+      <div class="bar"></div>
+      <div>
+        <p>“우리의 결정이 믿음 없는 결정이었을까? 하는 고민이 여전히 있습니다. 그럼에도 돌아보면 매 순간 하나님께서 저희 가정을 위해 준비하시고 열어 주신 일들이 많았습니다.”</p>
+        <cite>노효선 선교사</cite>
+      </div>
+    </div>
+
+    <section>
+      <h2>이 나라를 이해하는 한 문장</h2>
+      <p class="lead">우간다는 이미 기독교 국가입니다. 그래서 이곳의 선교는 ‘복음 전파’가 아니라 <strong>이미 있는 교회를 깊게 하고 교육으로 다음 세대를 세우는 일</strong>입니다. 19세기 후반 CMS와 백인신부회가 학교를 세우며 근대 교육을 시작한 이래, 오늘도 우간다 학생 다수가 종교기관이 운영하는 학교에 다닙니다. 다만 농촌 학교는 자격 교사·교재·전기·수도가 모두 부족합니다. 이 사역이 겨냥하는 지점이 정확히 여기입니다.</p>
+      <div class="grid2">
+        <article><div class="k">2026.01.15 대선</div><p>무세베니 <strong>71.65%</strong>로 7선. 1월 29일로 집권 <strong>40년</strong>. 투표 며칠 전부터 전국 인터넷 차단, 선거 후 시위에서 7명 사망, 야당 지도자 보비 와인은 국외로 피신했습니다.</p></article>
+        <article><div class="k">사역에 미치는 영향</div><p>인터넷 차단은 ICT 교육에, 치안 불안은 이동과 방과후학교 운영에, 정권 불확실성은 비자·NGO 등록에 직접 영향을 줍니다.</p></article>
+      </div>
+    </section>
+
+    <section>
+      <h2>지금 사역을 멈춰 세우고 있는 세 가지</h2>
+      <div class="blocks">
+        <article>
+          <span class="st">막힘 01</span>
+          <h3>비자</h3>
+          <p>안식월 중 비자가 만료되어 현재 <strong>3개월 여행비자</strong>로 체류 중. 3년 비자와 워크퍼밋을 재신청했습니다. <strong>비자가 나오기 전에는 농촌지역 사역을 진행할 수 없습니다.</strong></p>
+        </article>
+        <article>
+          <span class="st">막힘 02</span>
+          <h3>세관</h3>
+          <p>2025년 12월 한국에서 보낸 <strong>구글 크롬북 60대</strong>가 반년 이상 세관에 억류. 통관 담당자들이 500만 실링(약 미화 1,300달러)의 재정을 요구하고 있습니다.</p>
+        </article>
+        <article>
+          <span class="st">막힘 03</span>
+          <h3>기한</h3>
+          <p>개혁신학대학교 본관 <strong>네트워크 공사와 서버실 구축을 8월 말까지</strong> 마쳐야 합니다. 각 사무실·강의실 LAN 및 Wi-Fi, 서버 세팅.</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>선교사님이 하고 계신 일</h2>
+      <dl class="work">
+        <div><dt>개혁신학대학교</dt><dd>여러 후원교회의 도움으로 본관 완공. 네트워크·전산실 인프라 구축이 이 분의 전문 영역입니다.</dd></div>
+        <div><dt>직업훈련교육센터</dt><dd>동역 팀으로부터 건물을 허락받았으나 노후 건물이라 리모델링 필요 — 빗물탱크·가터 교체, 담장 설치, 교육 장비.</dd></div>
+        <div><dt>중등학교 교사 ICT</dt><dd>카물리 지역 <strong>10개 중등학교 교사</strong> 대상 역량 강화교육, 마지막 단계 진행 중.</dd></div>
+        <div><dt>초등학교 방과후</dt><dd><strong>4개 초등학교</strong>에 크롬북과 전자도서관 시스템을 설치해 방과후학교 운영 준비 중.</dd></div>
+        <div><dt>궁극적 목표</dt><dd>기술 교육을 통로로 삼아 농촌 학교 안에 <strong>기독교사 공동체</strong>를 세우는 것. 선교사가 떠나도 남는 것.</dd></div>
+      </dl>
+    </section>
+
+    <section>
+      <h2>선교부에 온 직접 요청</h2>
+      <div class="callout">
+        <div class="k">주보 2026.8.16 원문</div>
+        <p>“앞으로 오타와한인교회와 어떤 방향으로 소통하며 동역해 나가면 좋을지 선교부에서 좀더 구체적으로 안내해 주시면 감사하겠습니다.”</p>
+        <p class="note">응답이 필요한 실무 안건입니다. 자녀 학비가 모금액의 60%를 차지하던 구조가 해소되었으므로, 후원 규모와 용도를 다시 협의하기에 좋은 시점이기도 합니다.</p>
+      </div>
+    </section>
+
+    <div class="pray">
+      <h2>함께 드릴 기도</h2>
+      <ol>
+        <li><strong>비자</strong> — 가장 시급합니다. 3년 비자가 나오지 않으면 농촌 사역 자체가 멈춥니다.</li>
+        <li><strong>떨어져 있는 가정</strong> — 남편은 우간다, 아내와 두 자녀는 한국. 환율과 학비 상승으로 자녀 학비가 전체 모금액의 60%를 넘게 되면서 내린 결정이었습니다. 우간다에서 자란 주안이와 예주의 한국 적응.</li>
+        <li><strong>혼자 남은 선교사님</strong> — “가족이 떠난 집도 이제 혼자 지낼 수 있도록 다시 정리하고 있습니다”라는 문장의 무게. 정서적 고립을 위해.</li>
+        <li><strong>크롬북 통관</strong> — 부패한 요구에 굴하지 않으면서도 통관이 이루어지는 지혜.</li>
+        <li><strong>기독교사 공동체</strong> — 농촌 교사들이 교사로서의 소명을 새롭게 하여, 학교와 학생을 위해 기도하는 교사들로 세워지기를.</li>
+        <li><strong>선거 이후 우간다</strong> — 정치적 긴장이 사역 환경에 미칠 영향과, 이 나라의 젊은 세대를 위해.</li>
+      </ol>
+      <div class="urgent">
+        <span class="tag">지금 우리가 할 수 있는 것</span>
+        <ul>
+          <li><strong>선교부 회신</strong> — 선교사님이 직접 요청하신 동역 방향에 대한 구체적 안 마련</li>
+          <li><strong>전문성 매칭</strong> — ICT 인프라 사역입니다. 교회 내 IT·네트워크 전문 성도의 원격 자문, 장비 지원, 커리큘럼 협력이 실질적입니다</li>
+          <li>한국에 있는 아내와 자녀에 대한 <strong>정기적 안부와 기도</strong> — 파송·후원 교회의 사각지대가 되기 쉬운 부분</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <span>출처 · 우간다 선관위 2026 / HRW 2026.1 / 미 국무부 종교자유보고서 / OKCC 주보 2026.8.16</span>
+  </footer>
+</div>
+</body>
+</html>

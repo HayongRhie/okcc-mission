@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>프랑스 · 김종명·김민정 선교사 — OKCC 선교지 카드</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Song+Myung&family=IBM+Plex+Sans+KR:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#16181A; --ink2:#4A5157; --ink3:#7C858B;
+  --paper:#FCFCFA; --panel:#F2F3F0; --rule:#DCDFDB;
+  --accent:#A8730A; --wash:#FBF2DC;
+  --gutter:40px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{background:#E7E8E4;color:var(--ink);font-family:"IBM Plex Sans KR",system-ui,sans-serif;
+  font-weight:400;line-height:1.65;padding:28px 16px}
+.sheet{max-width:880px;margin:0 auto;background:var(--paper);
+  box-shadow:0 1px 3px rgba(0,0,0,.08),0 12px 40px rgba(0,0,0,.06)}
+.band{background:var(--accent);color:#fff;padding:26px var(--gutter) 22px}
+.eyebrow{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.16em;
+  text-transform:uppercase;opacity:.78;display:flex;gap:14px;flex-wrap:wrap}
+h1{font-family:"Song Myung",serif;font-weight:400;font-size:clamp(34px,6vw,52px);
+  line-height:1.08;margin:10px 0 6px;letter-spacing:-.01em}
+.who{font-size:15px;font-weight:300;opacity:.94}
+.who strong{font-weight:600}
+.meta{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));
+  border-bottom:1px solid var(--rule);padding:0 var(--gutter)}
+.meta div{padding:16px 18px;border-right:1px solid var(--rule);min-width:0}
+.meta div:first-child{padding-left:0}
+.meta div:last-child{padding-right:0}
+.meta div:last-child{border-right:0}
+.meta dt{font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.13em;
+  color:var(--ink3);text-transform:uppercase;margin-bottom:5px}
+.meta dd{font-size:15px;font-weight:600;line-height:1.35}
+.meta dd span{display:block;font-size:11.5px;font-weight:400;color:var(--ink2);margin-top:2px}
+.body{padding:0 var(--gutter) 40px}
+.quote{padding:34px 0 30px;border-bottom:1px solid var(--rule);
+  display:grid;grid-template-columns:3px 1fr;gap:22px}
+.quote .bar{background:var(--accent)}
+.quote p{font-family:"Song Myung",serif;font-size:clamp(19px,2.7vw,26px);line-height:1.5}
+.quote cite{display:block;margin-top:14px;font-style:normal;font-size:12px;color:var(--ink3);
+  font-family:"IBM Plex Mono",monospace;letter-spacing:.04em}
+section{padding:30px 0;border-bottom:1px solid var(--rule)}
+section:last-of-type{border-bottom:0}
+h2{font-size:12px;font-family:"IBM Plex Mono",monospace;letter-spacing:.15em;text-transform:uppercase;
+  color:var(--accent);font-weight:600;margin-bottom:16px;display:flex;align-items:center;gap:9px}
+h2::before{content:"◀";font-size:9px;transform:translateY(-1px)}
+p.lead{font-size:14.5px;color:var(--ink2);margin-bottom:18px;max-width:64ch}
+
+/* 대비 지표 — 프랑스 시그니처 */
+.paradox{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--rule);border:1px solid var(--rule)}
+.paradox article{background:var(--paper);padding:20px 20px 18px}
+.paradox .num{font-family:"Song Myung",serif;font-size:38px;line-height:1;color:var(--accent)}
+.paradox .lbl{font-size:13px;color:var(--ink2);margin-top:8px;line-height:1.55}
+.paradox .src{font-family:"IBM Plex Mono",monospace;font-size:10px;color:var(--ink3);margin-top:8px}
+
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--rule);border:1px solid var(--rule);margin-top:18px}
+.grid2 article{background:var(--paper);padding:16px 18px}
+.grid2 .k{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.12em;color:var(--accent);margin-bottom:6px}
+.grid2 p{font-size:13.5px;color:var(--ink2);line-height:1.6}
+
+.work{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule)}
+.work div{background:var(--paper);padding:14px 18px;display:grid;grid-template-columns:130px minmax(0,1fr);gap:16px;align-items:start}
+.work dt{font-size:13.5px;font-weight:600;color:var(--accent)}
+.work dd{font-size:13.5px;color:var(--ink2)}
+
+.pray{background:var(--wash);margin:0 calc(-1 * var(--gutter));padding:32px var(--gutter)}
+.pray h2{color:var(--accent)}
+.pray > ol{list-style:none;counter-reset:p;display:grid;gap:12px}
+.pray > ol > li{
+  counter-increment:p;position:relative;padding-left:44px;
+  font-size:14px;line-height:1.6;min-height:27px
+}
+.pray > ol > li::before{
+  content:counter(p,decimal-leading-zero);font-family:"IBM Plex Mono",monospace;
+  font-size:12px;font-weight:600;color:#fff;background:var(--accent);
+  width:26px;height:26px;display:grid;place-items:center;
+  position:absolute;left:0;top:1px
+}
+.pray > ol > li strong{font-weight:600;color:var(--ink)}
+.urgent{margin-top:22px;border-top:1px dashed #D6BC79;padding-top:18px}
+.urgent .tag{display:inline-block;background:var(--accent);color:#fff;font-family:"IBM Plex Mono",monospace;
+  font-size:10px;letter-spacing:.12em;padding:3px 8px;margin-bottom:10px}
+.urgent ul{list-style:none;display:grid;gap:8px}
+.urgent ul > li{
+  display:block;counter-increment:none;min-height:0;
+  font-size:13.5px;line-height:1.6;padding-left:16px;position:relative;color:var(--ink2)
+}
+.urgent ul > li::before{
+  content:"—";position:absolute;left:0;top:0;
+  width:auto;height:auto;display:block;place-items:unset;
+  background:none;color:var(--accent);font-family:inherit;font-size:inherit;font-weight:400
+}
+footer{padding:20px var(--gutter);background:var(--panel);font-family:"IBM Plex Mono",monospace;
+  font-size:10.5px;letter-spacing:.05em;color:var(--ink3);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+@media(max-width:680px){
+  :root{--gutter:22px}
+  body{padding:0}
+  .meta{grid-template-columns:1fr 1fr}
+  .meta div:first-child{padding-left:0}
+  .meta div:last-child{padding-right:0}
+  .meta div:nth-child(2n){border-right:0;padding-right:0}
+  .meta div:nth-child(2n+1){padding-left:0}
+  .meta div:nth-child(-n+2){border-bottom:1px solid var(--rule)}
+  .grid2,.paradox{grid-template-columns:1fr}
+  .work div{grid-template-columns:1fr;gap:3px}
+}
+@media print{body{background:#fff;padding:0}.sheet{box-shadow:none;max-width:none}section,.pray{break-inside:avoid}}
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <div class="band">
+    <div class="eyebrow"><span>OKCC 선교지 카드 03</span><span>서유럽</span><span>난민 · 교회개척</span></div>
+    <h1>프랑스</h1>
+    <p class="who"><strong>김종명 · 김민정 선교사</strong> · 난민 구제 ‘마실’ 사역과 교회 개척 · 5자녀(다니엘·사무엘·조엘·다엘·노엘) · 소식지 「하나발」</p>
+  </div>
+
+  <dl class="meta">
+    <div><dt>Ottawa → Paris</dt><dd>약 5,650 km<span>직항 약 7시간</span></dd></div>
+    <div><dt>인구</dt><dd>약 6,840만<span>서유럽 최대 면적</span></dd></div>
+    <div><dt>복음주의</dt><dd>약 1%<span>가톨릭 29% · 무종교 33%↑</span></dd></div>
+    <div><dt>사역 형태</dt><dd>푸드뱅크<span>야외 예배 · MK 사역</span></dd></div>
+  </dl>
+
+  <div class="body">
+
+    <div class="quote">
+      <div class="bar"></div>
+      <div>
+        <p>“많은 숫자보다 한 영혼을 품고 그리스도를 닮도록 가르치는 것은 고독한 사역인 것 같습니다. 한 영혼이 제대로 성장하는 데는 한 10년 넘게 걸리는 것 같습니다.”</p>
+        <cite>김종명 선교사 </cite>
+      </div>
+    </div>
+
+    <section>
+      <h2>프랑스라는 역설</h2>
+      <p class="lead">유럽에서 가장 세속화된 나라이면서, 동시에 유럽에서 교회가 가장 빨리 자라는 나라입니다. 이 두 사실이 같은 땅에서 동시에 참입니다.</p>
+      <div class="paradox">
+        <article>
+          <div class="num">6 %</div>
+          <div class="lbl">가톨릭 신자 중 주일미사에 참석하는 비율. 1905년 정교분리법(라이시테) 이래 종교는 공적 영역에서 배제되어 왔습니다.</div>
+          <div class="src">IFOP / 프랑스개신교연맹</div>
+        </article>
+        <article>
+          <div class="num">10일</div>
+          <div class="lbl">새 복음주의 교회가 하나씩 개척되는 주기. 1950년 5만 명이던 복음주의자가 지금은 약 74만~100만 명입니다.</div>
+          <div class="src">CNEF 프랑스복음주의전국협의회</div>
+        </article>
+      </div>
+      <div class="grid2">
+        <article><div class="k">성장의 동력</div><p>사하라 이남 아프리카·카리브해·해외영토 출신 <strong>이민자 공동체</strong>가 프랑스 복음주의 성장의 엔진입니다. 한국인 선교사가 이곳에서 난민을 섬기는 일은 이 흐름의 한가운데 서는 일입니다.</p></article>
+        <article><div class="k">회심의 저수지</div><p>개신교로 회심한 이들의 <strong>72%</strong>가 이전 종교로 가톨릭을 답했습니다(2025 IFOP). 35세 미만에서는 “개신교인”보다 “복음주의자”를 정체성으로 택하는 비율이 53%입니다.</p></article>
+      </div>
+    </section>
+
+    <section>
+      <h2>난민을 둘러싼 현실</h2>
+      <div class="grid2" style="margin-top:0">
+        <article><div class="k">임시보호 제도</div><p>EU 전체 우크라이나 임시보호 대상자는 <strong>약 438만 명</strong>(2026.5). 제도는 2027년 3월까지 연장되었습니다. 프랑스는 5만~8만 명 수준으로 상대적 소수입니다.</p></article>
+        <article><div class="k">위태로운 지점</div><p>프랑스 내 임시보호 대상자 중 안정적 직장으로 자력 주거가 가능한 사람은 <strong>약 2만 명뿐</strong>입니다. 정부는 호텔 임시숙소를 절반 이상 감축할 계획입니다.</p></article>
+      </div>
+    </section>
+
+    <section>
+      <h2>선교사님이 하고 계신 일</h2>
+      <dl class="work">
+        <div><dt>마실 · 푸드뱅크</dt><dd><strong>5년 계약 만료 후 재신청 → 정부 관할 부서가 5년 연장 승인</strong>(2026.4.24 허가). 라이시테 체계 안에서 사회복지 파트너로 인정받은, 사역의 합법적 기반입니다.</dd></div>
+        <div><dt>구제와 관계</dt><dd>바자회로 생활용품 배분. 아직 예수님을 인격적으로 만나지 못한 우크라이나 자원봉사자들이 함께 섬기며 복음의 접촉점이 되고 있습니다.</dd></div>
+        <div><dt>공원 야외 예배</dt><dd>빌려 쓰던 교회의 담임목사 부부가 4월 사임하며 장소를 잃었습니다. 4월 중순부터 공원에서 예배 중이며, 오히려 오가는 무슬림·노숙자들에게 찬양과 말씀이 전해지고 있습니다. <strong>9월 새 목사 부임 후 다시 장소를 빌릴 예정.</strong></dd></div>
+        <div><dt>MK · 가족</dt><dd>7월 MK 가족 캠프 참석. 장남 다니엘이 7월 16일 대학 졸업. 가족은 8월 26일 프랑스로 출국 예정.</dd></div>
+      </dl>
+    </section>
+
+    <section>
+      <h2>다니엘의 그림 — MK가 건너온 다리</h2>
+      <p class="lead" style="font-family:'Song Myung',serif;font-size:16px;color:var(--ink);max-width:70ch">
+        중학교 때 동양인 부모가 선교사가 되어 프랑스에 오게 된 것이 싫었고, 원치 않게 MK가 된 자신의 정체감에 분노했습니다. 고등학교 때 모네의 수련 그림을 보고 감동을 받았고, 고국 MK 수련회에서 자신의 정체성을 대면했습니다. <strong>“분노에서 화해로, 상실감에서 MK의 본모습을 인정하는 나의 다리”</strong>를 그렸고, 이제 자신의 정체성과 싸우는 것을 멈추었습니다.
+      </p>
+      <p style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--ink3)"> 하나발」 264호</p>
+    </section>
+
+    <div class="pray">
+      <h2>함께 드릴 기도</h2>
+      <ol>
+        <li><strong>9월 예배 장소 회복</strong> — 새 목사 부임 후 다시 공간을 빌릴 수 있도록. 그때까지 공원 예배가 오히려 선교의 통로가 되기를.</li>
+        <li><strong>푸드뱅크 5년 연장이 열매로</strong> — 정부 인가라는 합법적 기반 위에서 구제가 복음의 통로가 되기를.</li>
+        <li><strong>난민 정책 변화</strong> — 호텔 숙소 절반 감축으로 갈 곳을 잃는 가정들이 생깁니다. 정책 결정자들과 그들의 실제 필요를 위해.</li>
+        <li><strong>연락이 끊긴 JL 형제</strong> — 병원이나 요양원에 있을지 모릅니다. 이런 한 사람을 위한 기도가 이 사역의 성격을 그대로 보여줍니다.</li>
+        <li><strong>자녀들</strong> — 사무엘의 8월 재시험과 진로, 다니엘의 졸업 후 진로, 다섯 자녀 모두의 정체성과 평안.</li>
+        <li><strong>“한 영혼에 10년”의 인내</strong> — 숫자로 보고되지 않는 사역을 하는 분들의 고독을 위해.</li>
+      </ol>
+      <div class="urgent">
+        <span class="tag">지금 우리가 할 수 있는 것</span>
+        <ul>
+          <li>한국 청년부 단기팀이 실제로 큰 힘이 되었습니다 — <strong>바후림(청년부) 차원의 단기팀 연결</strong> 검토</li>
+          <li>바자회용 생활용품·아동 물품 지원(배송비 감안해 지정 현금 후원이 더 효율적일 수 있음, 사전 문의 권장)</li>
+          <li>8월 26일 출국 예정 — 다음 모국 방문 일정에 맞춘 <strong>OKCC 초청</strong> 검토</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <span>출처 · CNEF / Eurostat 2026 / IFOP 2025 / 「하나발」 263–266호</span>
+  </footer>
+</div>
+</body>
+</html>
